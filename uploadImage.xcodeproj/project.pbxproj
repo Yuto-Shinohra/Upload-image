@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44133D4728389C8200C0ECE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44133D4628389C8200C0ECE6 /* AppDelegate.swift */; };
+		44133D4928389C8200C0ECE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44133D4828389C8200C0ECE6 /* SceneDelegate.swift */; };
+		44133D4B28389C8200C0ECE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44133D4A28389C8200C0ECE6 /* ViewController.swift */; };
+		44133D5028389C8300C0ECE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44133D4F28389C8300C0ECE6 /* Assets.xcassets */; };
+		44133D5328389C8300C0ECE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44133D5128389C8300C0ECE6 /* LaunchScreen.storyboard */; };
+		44133D632838A8D900C0ECE6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44133D622838A8D900C0ECE6 /* GoogleService-Info.plist */; };
+		44133D892838ADF800C0ECE6 /* hoge.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 44133D882838ADF800C0ECE6 /* hoge.jpeg */; };
+		44133D8B2838AE8200C0ECE6 /* camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44133D8A2838AE8200C0ECE6 /* camera.swift */; };
+		4483C74B28AFA5240080704B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4483C74A28AFA5240080704B /* Main.storyboard */; };
+		4483C74E28AFA59C0080704B /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 4483C74D28AFA59C0080704B /* CropViewController */; };
+		4483C75128AFA5CD0080704B /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 4483C75028AFA5CD0080704B /* CropViewController */; };
+		4483C75328AFA5CD0080704B /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 4483C75228AFA5CD0080704B /* TOCropViewController */; };
+		ADD77A2E555C17A9C5015F39 /* Pods_uploadImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AD89E29BBBA5C10131F148 /* Pods_uploadImage.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		085E493F2888230519531ECE /* Pods-uploadImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uploadImage.debug.xcconfig"; path = "Target Support Files/Pods-uploadImage/Pods-uploadImage.debug.xcconfig"; sourceTree = "<group>"; };
+		44133D4328389C8200C0ECE6 /* uploadImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uploadImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44133D4628389C8200C0ECE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44133D4828389C8200C0ECE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44133D4A28389C8200C0ECE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44133D4F28389C8300C0ECE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44133D5228389C8300C0ECE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44133D5428389C8300C0ECE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44133D622838A8D900C0ECE6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		44133D882838ADF800C0ECE6 /* hoge.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hoge.jpeg; sourceTree = SOURCE_ROOT; };
+		44133D8A2838AE8200C0ECE6 /* camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camera.swift; sourceTree = "<group>"; };
+		4483C74A28AFA5240080704B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D1AD89E29BBBA5C10131F148 /* Pods_uploadImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uploadImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE65ACCB55A522BDE1E970F9 /* Pods-uploadImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uploadImage.release.xcconfig"; path = "Target Support Files/Pods-uploadImage/Pods-uploadImage.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44133D4028389C8200C0ECE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD77A2E555C17A9C5015F39 /* Pods_uploadImage.framework in Frameworks */,
+				4483C74E28AFA59C0080704B /* CropViewController in Frameworks */,
+				4483C75328AFA5CD0080704B /* TOCropViewController in Frameworks */,
+				4483C75128AFA5CD0080704B /* CropViewController in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44133D3A28389C8200C0ECE6 = {
+			isa = PBXGroup;
+			children = (
+				44133D4528389C8200C0ECE6 /* uploadImage */,
+				44133D4428389C8200C0ECE6 /* Products */,
+				EC08D734CC789B189707739B /* Pods */,
+				EB55EC7F3E2DE04E2571A869 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44133D4428389C8200C0ECE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44133D4328389C8200C0ECE6 /* uploadImage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44133D4528389C8200C0ECE6 /* uploadImage */ = {
+			isa = PBXGroup;
+			children = (
+				44133D4628389C8200C0ECE6 /* AppDelegate.swift */,
+				44133D4828389C8200C0ECE6 /* SceneDelegate.swift */,
+				44133D4A28389C8200C0ECE6 /* ViewController.swift */,
+				44133D8A2838AE8200C0ECE6 /* camera.swift */,
+				4483C74A28AFA5240080704B /* Main.storyboard */,
+				44133D4F28389C8300C0ECE6 /* Assets.xcassets */,
+				44133D5128389C8300C0ECE6 /* LaunchScreen.storyboard */,
+				44133D5428389C8300C0ECE6 /* Info.plist */,
+				44133D882838ADF800C0ECE6 /* hoge.jpeg */,
+				44133D622838A8D900C0ECE6 /* GoogleService-Info.plist */,
+			);
+			path = uploadImage;
+			sourceTree = "<group>";
+		};
+		EB55EC7F3E2DE04E2571A869 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1AD89E29BBBA5C10131F148 /* Pods_uploadImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC08D734CC789B189707739B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				085E493F2888230519531ECE /* Pods-uploadImage.debug.xcconfig */,
+				FE65ACCB55A522BDE1E970F9 /* Pods-uploadImage.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44133D4228389C8200C0ECE6 /* uploadImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44133D5728389C8300C0ECE6 /* Build configuration list for PBXNativeTarget "uploadImage" */;
+			buildPhases = (
+				65374E2E2344C9083A81C95E /* [CP] Check Pods Manifest.lock */,
+				44133D3F28389C8200C0ECE6 /* Sources */,
+				44133D4028389C8200C0ECE6 /* Frameworks */,
+				44133D4128389C8200C0ECE6 /* Resources */,
+				C88777503104BDA7FB6C4D2E /* [CP] Embed Pods Frameworks */,
+				AFDB93381B3688DE1952B381 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uploadImage;
+			packageProductDependencies = (
+				4483C74D28AFA59C0080704B /* CropViewController */,
+				4483C75028AFA5CD0080704B /* CropViewController */,
+				4483C75228AFA5CD0080704B /* TOCropViewController */,
+			);
+			productName = uploadImage;
+			productReference = 44133D4328389C8200C0ECE6 /* uploadImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44133D3B28389C8200C0ECE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					44133D4228389C8200C0ECE6 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 44133D3E28389C8200C0ECE6 /* Build configuration list for PBXProject "uploadImage" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44133D3A28389C8200C0ECE6;
+			packageReferences = (
+				4483C74C28AFA59C0080704B /* XCRemoteSwiftPackageReference "TOCropViewController" */,
+				4483C74F28AFA5CD0080704B /* XCRemoteSwiftPackageReference "TOCropViewController" */,
+			);
+			productRefGroup = 44133D4428389C8200C0ECE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44133D4228389C8200C0ECE6 /* uploadImage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44133D4128389C8200C0ECE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44133D5328389C8300C0ECE6 /* LaunchScreen.storyboard in Resources */,
+				44133D5028389C8300C0ECE6 /* Assets.xcassets in Resources */,
+				44133D632838A8D900C0ECE6 /* GoogleService-Info.plist in Resources */,
+				4483C74B28AFA5240080704B /* Main.storyboard in Resources */,
+				44133D892838ADF800C0ECE6 /* hoge.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65374E2E2344C9083A81C95E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uploadImage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFDB93381B3688DE1952B381 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uploadImage/Pods-uploadImage-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uploadImage/Pods-uploadImage-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uploadImage/Pods-uploadImage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C88777503104BDA7FB6C4D2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uploadImage/Pods-uploadImage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uploadImage/Pods-uploadImage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uploadImage/Pods-uploadImage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44133D3F28389C8200C0ECE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44133D8B2838AE8200C0ECE6 /* camera.swift in Sources */,
+				44133D4B28389C8200C0ECE6 /* ViewController.swift in Sources */,
+				44133D4728389C8200C0ECE6 /* AppDelegate.swift in Sources */,
+				44133D4928389C8200C0ECE6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		44133D5128389C8300C0ECE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44133D5228389C8300C0ECE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44133D5528389C8300C0ECE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44133D5628389C8300C0ECE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44133D5828389C8300C0ECE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 085E493F2888230519531ECE /* Pods-uploadImage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2T39PPMT9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = uploadImage/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラにアクセスします。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.yuto.uploadImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44133D5928389C8300C0ECE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE65ACCB55A522BDE1E970F9 /* Pods-uploadImage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2T39PPMT9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = uploadImage/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラにアクセスします。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.yuto.uploadImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44133D3E28389C8200C0ECE6 /* Build configuration list for PBXProject "uploadImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44133D5528389C8300C0ECE6 /* Debug */,
+				44133D5628389C8300C0ECE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44133D5728389C8300C0ECE6 /* Build configuration list for PBXNativeTarget "uploadImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44133D5828389C8300C0ECE6 /* Debug */,
+				44133D5928389C8300C0ECE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4483C74C28AFA59C0080704B /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TimOliver/TOCropViewController.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		4483C74F28AFA5CD0080704B /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TimOliver/TOCropViewController.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4483C74D28AFA59C0080704B /* CropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4483C74C28AFA59C0080704B /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = CropViewController;
+		};
+		4483C75028AFA5CD0080704B /* CropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4483C74C28AFA59C0080704B /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = CropViewController;
+		};
+		4483C75228AFA5CD0080704B /* TOCropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4483C74C28AFA59C0080704B /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = TOCropViewController;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 44133D3B28389C8200C0ECE6 /* Project object */;
+}
