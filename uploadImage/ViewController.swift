@@ -38,6 +38,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
     @IBOutlet weak var uplaodimagebutton2: UIButton!
     
     @IBOutlet var imagecroppingoutlet: UIView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,12 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
     }
     
     func uploadImage(){
+        //create count
+        var count = 0
+        //alert
+        let alert = UIAlertController("title: count", message: "count: \(count)", preferredStyle: .alert)
+
+        
         let storageref = Storage.storage().reference(forURL: "gs://loadimage-9bac0.appspot.com/").child("post")
         
         let image = imageViewpicker.image!
