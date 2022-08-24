@@ -22,6 +22,8 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
     
     @IBOutlet weak var testLabel: UILabel!
     
+    
+    //アラートを表示させる + Pythonで作成したAPIを叩くためのプログラム
     @IBAction func uploadImageButton(){
      //   print("アップロードされました")
         uploadImage()
