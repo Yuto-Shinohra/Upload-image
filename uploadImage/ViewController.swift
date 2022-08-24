@@ -15,13 +15,30 @@ import CropViewController
 class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate,CropViewControllerDelegate{
     
     
+    var count = 0
+
     
     @IBOutlet weak var imageViewpicker: UIImageView!
+    
+    @IBOutlet weak var testLabel: UILabel!
     
     @IBAction func uploadImageButton(){
      //   print("アップロードされました")
         uploadImage()
         print("tapped")
+        
+
+        count += 1
+        UserDefaults.standard.set(count, forKey: "count")
+//        let getcount = UserDefaults.standard.integer(forKey: "count")
+        //UserDefaults.standard.set(count, forKey: "count")
+        count = UserDefaults.standard.object(forKey: "count") as! Int
+
+        print(count)
+        let alert = UIAlertController(title: "カレンダーに予定を送ります。", message: "count:\(count)", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert,animated: true,completion: nil)
     }
     
     @IBAction func imagecropping(_ sender: Any) {
@@ -47,7 +64,8 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
     }
     
     func uploadImage(){
-        let storageref = Storage.storage().reference(forURL: "gs://loadimage-9bac0.appspot.com/").child("post")
+        
+        let storageref = Storage.storage().reference(forURL: "gs://loadimage-9bac0.appspot.com/").child("post\(count)")
         
         let image = imageViewpicker.image!
 //        "hoge.jpeg"
